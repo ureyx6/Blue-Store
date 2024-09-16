@@ -8,8 +8,8 @@ function Navbar() {
   return (
     <nav className ="navbar">
         <div className ="navbar-left">
-            <a href="/"><IoBagCheck></IoBagCheck></a>
-            <a href="/">BlueStore</a>
+            <a href="/" className ="logo"><IoBagCheck></IoBagCheck></a>
+            <a href="/" className ="logo">BlueStore</a>
         </div>
         <div className = "navbar-center">
             <ul className ="navbar-links">
@@ -19,8 +19,8 @@ function Navbar() {
             </ul>
         </div>
         <div className = "navbar-right">
-            <a href = "/cart"> <FaShoppingCart/> Cart</a>
-            <a href = "/account"> <FaRegUser/> </a>
+            <a href = "/cart" className = "cart-icon"> <FaShoppingCart/> Cart</a>
+            <a href = "/account" className ="user-icon"> <FaRegUser/> </a>
         </div>
     </nav>
   );
