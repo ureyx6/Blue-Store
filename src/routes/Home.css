@@ -1,0 +1,38 @@
+.home {
+    display:flex;
+
+}
+.home-left {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    margin-top: .5rem;
+    width: 50%;
+    background-color: #89CFF0;
+}
+.textbox {
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    color: #fff;
+}
+.buttonbox {
+    max-width: 50%;
+
+}
+.home-right{
+    height: fit-content;
+    width: 50%;
+    margin-top: 2rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+}
+.home-image {
+    margin-left: 2rem;
+    height: 16rem;
+  }
