@@ -16,6 +16,7 @@ function Home() {
       <div className ="home-right">
         <img className ="home-image" src="https://m.media-amazon.com/images/I/41bIlvE1rdL._AC_SX679_.jpg"></img>
         <img className = "home-image" src="https://m.media-amazon.com/images/I/61hZrbHRMWL._AC_SX679_.jpg"></img>
+        <img className = "home-image" src="https://m.media-amazon.com/images/I/71-D1xCuVwL._AC_SX569_.jpg"></img>
       </div>
     </div>
   )
