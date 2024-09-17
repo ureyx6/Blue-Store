@@ -1,6 +1,6 @@
-.navbar {
+.navbar-login {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: #fff;
     color: #89CFF0;
