@@ -7,6 +7,7 @@ import Shop from './routes/Shop.tsx';
 import './index.css'
 import { createBrowserRouter, RouterProvider, createRoutesFromElements, Route,} from "react-router-dom";
 import NavbarLogin from './components/NavbarLogin.tsx';
+import Login from './routes/Login.tsx';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
@@ -17,6 +18,7 @@ const router = createBrowserRouter(
 
     </Route>
     <Route path = "/login" element = {<NavbarLogin/>}>
+      <Route path = "/login" element = {<Login/>}></Route>
     </Route>
     </>
   )
