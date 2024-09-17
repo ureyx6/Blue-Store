@@ -2,10 +2,10 @@
 .button-28 {
     appearance: none;
     background-color: transparent;
-    border: 2px solid #fff;
+    border: 2px solid #89cff0;
     border-radius: 15px;
     box-sizing: border-box;
-    color: #fff;
+    color: #89cff0;
     cursor: pointer;
     display: inline-block;
     font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -25,6 +25,7 @@
     touch-action: manipulation;
     width: 100%;
     will-change: transform;
+    transition: all .5s ease;
   }
   
   .button-28:disabled {
@@ -32,7 +33,7 @@
   }
   
   .button-28:hover {
-    color: #fff;
+    color: #89cff0;
     background-color: transparent;
     transform: translateY(-2px);
   }
