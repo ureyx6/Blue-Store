@@ -5,51 +5,79 @@
 .home {
     display:flex;
     overflow: hidden;
+    flex-direction: column;
 
 }
-.home-left:hover {
-    width: 55%;
-  }
-.home-left {
+
+.home-top {
     text-align: center;
     display: flex;
     justify-content: center;
-    height: 110vh;
+    width: 100%;
+    height: 50vh;
     flex-direction: column;
     align-items: center;
     margin-top: .5rem;
-    width: 50%;
-    background-color: #89CFF0;
+    background-color: #FFF;
     transition: all 1s ease;
     -webkit-transition: all 1s ease;
+}
+.home-top:hover {
+    height: 55vh;
 }
 .textbox {
     margin-bottom: 2rem;
     font-size: 4rem;
-    color: #fff;
+    color: #808080;
+    font-weight: 800;
 }
 .buttonbox {
-    max-width: 50%;
+    width: 10%;
 
 }
-.home-right{
-    height: 100vh;
-    margin-top: 2rem;
+
+.home-bottom {
     display: flex;
+    width: 100%;
+    height: 50vh;
+}
+.firstbox {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     width: 50%;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    transition: all 1s ease;
 }
-.home-right:hover {
-    width: 55%;
-  }
-.home-image {
-    height: 13rem;
-    transition: all 1s ease;
-    -webkit-transition: all 1s ease;
+.firstboxheader {
+    font-weight: 600;
+    font-size: 3rem;
+    margin-top: 2rem;
+    color: #89Cff0;
 }
-  .home-image:hover {
-    -webkit-filter: blur(4px);
-    filter: blur(4px);
-  }
+.firstboxtext {
+    margin-top: 2rem;
+    color: #808080;
+}
+.secondbox {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+}
+.secondboxheader {
+    font-weight: 600;
+    font-size: 3rem;
+    margin-top: 2rem;
+    color: #89Cff0;
+}
+.secondboximages {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.logo {
+    height: 8rem;
+    transition: all ease 1s;
+}
+.logo:hover {
+    height: 8.5rem;
+}
