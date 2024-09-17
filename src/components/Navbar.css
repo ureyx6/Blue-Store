@@ -3,15 +3,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #89CFF0;
-    color: #fff;
+    background-color: #fff;
+    color: #89CFF0;
     padding: 0.8rem;
   } 
   .navbar-left .logo {
 
     font-size: 2rem;
     font-weight: bold;
-    color: #fff;
+    color: #89CFF0;
     text-decoration: none;
   
   }
@@ -26,7 +26,7 @@
   margin-right: 1rem;
 }
 .navbar-center .navbar-links a {
-  color: #fff;
+  color: #808080;
   text-decoration: none;
 }
 .navbar-right {
@@ -36,7 +36,7 @@
 }
 .cart-icon, .user-icon {
   text-decoration: none;
-  color: #fff;
+  color: #89CFF0;
   margin-left: 1rem;
 }
 ;
