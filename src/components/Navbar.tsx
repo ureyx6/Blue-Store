@@ -19,7 +19,7 @@ function Navbar() {
         </div>
         <div className = "navbar-right">
             <a href = "/cart" className = "cart-icon"> <FaShoppingCart/> Cart</a>
-            <a href = "/account" className ="user-icon"> <FaRegUser/> </a>
+            <a href = "/login" className ="user-icon"> <FaRegUser/> </a>
         </div>
     </nav>
   );
