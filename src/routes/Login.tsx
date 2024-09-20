@@ -1,14 +1,32 @@
 import React from 'react'
 import { useState } from 'react';
+import { auth } from '../../backend/firebaseconfig'
+import { signInWithEmailAndPassword } from 'firebase/auth'
+
+
+
+
+
 
 function Login() {
+
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
 
   function handleSignIn(e) {
     e.preventDefault();
-    console.log("meow");
+    signInWithEmailAndPassword(auth, email, password) .then((userCredential) => {
+      console.log(userCredential);
+      if (userCredential) {
+        window.location.href=("/");
+      }
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+    
+    
   }
 
   return (
