@@ -11,17 +11,23 @@ import AuthListener from '../components/AuthListener';
 
 
 
+
 function Login() {
 
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const Navigate = useNavigate();
-  const {loggedIn} = AuthListener();
+  const {loggedIn, checkingStatus} = AuthListener();
+  
+if (loggedIn) {
+  Navigate("/dashboard");
+}
 
-  if (loggedIn == true) {
-    Navigate("/dashboard");
-  }
+
+
+
+  
 
   
   function handleSignIn(e) {
@@ -41,6 +47,9 @@ function Login() {
 
   return (
 
+    
+    <>
+    { checkingStatus ? ""                                                     :
     <div className = "login-container">
         <form onSubmit = {handleSignIn}>
       <label>
@@ -54,6 +63,8 @@ function Login() {
       <button type="submit">Login</button>
       </form>
     </div>
+}
+    </>
   )
 }
 export default Login
