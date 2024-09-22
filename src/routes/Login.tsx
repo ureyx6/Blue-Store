@@ -1,7 +1,10 @@
 import React from 'react'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { auth } from '../../backend/firebaseconfig'
 import { signInWithEmailAndPassword } from 'firebase/auth'
+import { Navigate } from 'react-router-dom';
+import { onAuthStateChanged } from 'firebase/auth';
+
 
 
 
@@ -10,16 +13,28 @@ import { signInWithEmailAndPassword } from 'firebase/auth'
 
 function Login() {
 
+
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [loggedIn, setLoggedIn] = useState(false);
 
+
+
+    useEffect(() => {
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                setLoggedIn(true);
+               console.log(loggedIn);
+            }
+        })
+    })
 
   function handleSignIn(e) {
     e.preventDefault();
     signInWithEmailAndPassword(auth, email, password) .then((userCredential) => {
       console.log(userCredential);
       if (userCredential) {
-        window.location.href=("/");
+        <Navigate to = "/"></Navigate>
       }
     })
     .catch((error) => {
@@ -30,6 +45,7 @@ function Login() {
   }
 
   return (
+
     <div className = "login-container">
         <form onSubmit = {handleSignIn}>
       <label>
@@ -45,5 +61,4 @@ function Login() {
     </div>
   )
 }
-
 export default Login
