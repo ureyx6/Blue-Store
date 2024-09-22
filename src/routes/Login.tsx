@@ -1,9 +1,9 @@
 import React from 'react'
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { auth } from '../../backend/firebaseconfig'
 import { signInWithEmailAndPassword } from 'firebase/auth'
-import { Navigate } from 'react-router-dom';
-import { onAuthStateChanged } from 'firebase/auth';
+import { useNavigate } from 'react-router-dom';
+import AuthListener from '../components/AuthListener';
 
 
 
@@ -16,25 +16,20 @@ function Login() {
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [loggedIn, setLoggedIn] = useState(false);
+  const Navigate = useNavigate();
+  const {loggedIn} = AuthListener();
 
+  if (loggedIn == true) {
+    Navigate("/dashboard");
+  }
 
-
-    useEffect(() => {
-        onAuthStateChanged(auth, (user) => {
-            if (user) {
-                setLoggedIn(true);
-               console.log(loggedIn);
-            }
-        })
-    })
-
+  
   function handleSignIn(e) {
     e.preventDefault();
     signInWithEmailAndPassword(auth, email, password) .then((userCredential) => {
       console.log(userCredential);
       if (userCredential) {
-        <Navigate to = "/"></Navigate>
+        Navigate("/");
       }
     })
     .catch((error) => {
