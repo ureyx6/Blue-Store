@@ -4,6 +4,7 @@ import { auth } from '../../backend/firebaseconfig'
 import { signInWithEmailAndPassword } from 'firebase/auth'
 import { useNavigate } from 'react-router-dom';
 import AuthListener from '../components/AuthListener';
+import { PuffLoader } from 'react-spinners';
 
 
 
@@ -49,7 +50,7 @@ if (loggedIn) {
 
     
     <>
-    { checkingStatus ? ""                                                     :
+    { checkingStatus ? <PuffLoader/> :
     <div className = "login-container">
         <form onSubmit = {handleSignIn}>
       <label>
