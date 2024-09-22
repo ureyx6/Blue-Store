@@ -8,6 +8,7 @@ import './index.css'
 import { createBrowserRouter, RouterProvider, createRoutesFromElements, Route,} from "react-router-dom";
 import NavbarLogin from './components/NavbarLogin.tsx';
 import Login from './routes/Login.tsx';
+import Dashboard from './routes/Dashboard.tsx';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
@@ -20,11 +21,14 @@ const router = createBrowserRouter(
     <Route path = "/login" element = {<NavbarLogin/>}>
       <Route path = "/login" element = {<Login/>}></Route>
     </Route>
+    <Route path ="/dashboard" element ={<NavbarLogin/>}>
+      <Route path ="/dashboard" element ={<Dashboard/>}></Route>
+    </Route>
     </>
   )
 )
 createRoot(document.getElementById('root')!).render(
-  <StrictMode>
+  <StrictMode>  
     <RouterProvider router = {router} />
   </StrictMode>,
 )
