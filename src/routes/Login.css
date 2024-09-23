@@ -1,19 +1,25 @@
 * {
     font-family: Inter;
 }
+.login-page {
+    height:110vh;
+    background-color:#89cff0;
+}
+
 .login-holder {
     display: flex;
-    background-color:#89cff0;
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 110vh;
+    background-color:#89cff0;
 }
+
 .login-top-text {
     font-size: 2rem;
     font-weight: bolder;
     color: white;
     margin-right: 2rem;
+    margin-top: 3rem;
 }
 .login-container input {
     color: white;
@@ -45,6 +51,7 @@
 }
 
 .login-container form {
+    margin-top: 2rem;
     display: flex;
     border-radius: 12px;
     width: 20rem;

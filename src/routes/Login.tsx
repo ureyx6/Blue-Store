@@ -50,7 +50,7 @@ if (loggedIn) {
 
   return (
 
-    
+    <div className="login-page">
     <div className = "login-holder">
     { checkingStatus ? <PuffLoader/> :
     <div className = "login-container">
@@ -66,6 +66,7 @@ if (loggedIn) {
       </form>
     </div>
 }
+    </div>
     </div>
   )
 }
