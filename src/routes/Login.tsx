@@ -5,6 +5,7 @@ import { signInWithEmailAndPassword } from 'firebase/auth'
 import { useNavigate } from 'react-router-dom';
 import AuthListener from '../components/AuthListener';
 import { PuffLoader } from 'react-spinners';
+import './Login.css'
 
 
 
@@ -49,23 +50,21 @@ if (loggedIn) {
   return (
 
     
-    <>
+    <div className = "login-holder">
     { checkingStatus ? <PuffLoader/> :
     <div className = "login-container">
         <form onSubmit = {handleSignIn}>
       <label>
-        Email
-        <input id = "email" name="email" value = {email} onChange = {(e) => setEmail(e.target.value)}></input> 
+        <input placeholder = "Email" id = "email" name="email" value = {email} onChange = {(e) => setEmail(e.target.value)}></input> 
         <label>
-            Password
-            <input id = "password" name="password" value = {password} onChange = {(e) => setPassword(e.target.value)}></input>
+            <input placeholder = "Password" id = "password" name="password" value = {password} onChange = {(e) => setPassword(e.target.value)}></input>
         </label>
       </label>
       <button type="submit">Login</button>
       </form>
     </div>
 }
-    </>
+    </div>
   )
 }
 export default Login
