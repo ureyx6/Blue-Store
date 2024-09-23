@@ -6,7 +6,14 @@
     background-color:#89cff0;
     align-items: center;
     justify-content: center;
+    text-align: center;
     height: 110vh;
+}
+.login-top-text {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+    margin-right: 2rem;
 }
 .login-container input {
     color: white;
