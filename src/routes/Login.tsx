@@ -63,6 +63,7 @@ if (loggedIn) {
         </label>
       </label>
       <LoginButton buttonText="Login"/>
+      <div className = "login-bottom-text">Don't have an account? <a href="/signup"> Sign Up</a></div>
       </form>
     </div>
 }
