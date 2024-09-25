@@ -9,6 +9,7 @@ import { createBrowserRouter, RouterProvider, createRoutesFromElements, Route,} 
 import NavbarLogin from './components/NavbarLogin.tsx';
 import Login from './routes/Login.tsx';
 import Dashboard from './routes/Dashboard.tsx';
+import SignUp from './routes/SignUp.tsx';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
@@ -23,6 +24,10 @@ const router = createBrowserRouter(
     </Route>
     <Route path ="/dashboard" element ={<NavbarLogin/>}>
       <Route path ="/dashboard" element ={<Dashboard/>}></Route>
+    </Route>
+    <Route path ="/signup" element = {<NavbarLogin/>}>
+      <Route path ="/signup" element = {<SignUp/>}>
+    </Route>
     </Route>
     </>
   )
