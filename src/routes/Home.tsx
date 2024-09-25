@@ -8,8 +8,7 @@ function Home() {
     <div className ="home">
       <div className = "home-top">
         <div className = "textbox">
-      Ready to experience endless deals?
-      </div>
+      Ready to experience <span>endless deals?</span></div><div className="under-main-text">at BlueStore we strive to offer you the best tech at the best prices! Ready to get started?</div>
       <div className ="buttonbox">
         <Link to="/shop">
         <Button buttonText="Shop Now"/>
