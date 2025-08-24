@@ -3,7 +3,7 @@
 }
 .login-page {
     height:110vh;
-    background-color:#89cff0;
+    background-color:#366db3;
 }
 
 .login-holder {
@@ -11,7 +11,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color:#89cff0;
+    background-color:#366db3;
 }
 
 .login-top-text {
@@ -32,7 +32,7 @@
     border-right: 0px;
     border-radius: 0px;
     border-bottom: 2px solid white;
-    background-color: #89cff0;
+    background-color: #366db3;
     transition: 1s all ease;
 
 }
