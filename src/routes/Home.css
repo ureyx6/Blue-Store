@@ -11,76 +11,34 @@
 }
 
 .home-top {
-    text-align: center;
+    align-items: center;
     display: flex;
-    justify-content: center;
     width: 100%;
     height: 50vh;
-    flex-direction: column;
-    align-items: center;
     margin-top: .5rem;
-    transition: all .1s ease;
-    -webkit-transition: all .1s ease;
+    margin-left: 5rem;
 }
-.home-top:hover {
-    transform: scale(1.1);
+.home-right-side {
+    max-width:50%;
+    text-align: left;
+    display:flex;
+    flex-direction:column;
 }
+
 .textbox {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     font-size: 4rem;
-    color: #808080;
+    color: black;
     font-weight: 800;
 }
 .textbox span {
     color: #366db3;
 }
 .buttonbox {
-    width: 10%;
+    width: 20%;
 
 }
 
-.home-bottom {
-    display: flex;
-    width: 100%;
-    height: 50vh;
-    transition: all 1s ease;
-}
-
-
-.firstbox {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 50%;
-}
-.firstboxheader {
-    font-weight: 600;
-    font-size: 3rem;
-    margin-top: 2rem;
-    color: #808080;
-}
-.firstboxtext {
-    margin-top: 2rem;
-    color: #808080;
-}
-.secondbox {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 50%;
-}
-.secondboxheader {
-    font-weight: 600;
-    font-size: 3rem;
-    margin-top: 2rem;
-    color: #808080;
-}
-.secondboximages {
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: space-evenly;
-}
 .logo {
     height: 8rem;
     transition: all ease 1s;
@@ -89,8 +47,8 @@
     transform:scale(1.05);
 }
 .under-main-text {
-    color: #808080;
-    margin-top: -.5rem;
-    margin-bottom: .7rem;
+    color: black;
+    margin-top: -.9rem;
+    margin-bottom: 1.5rem;
     font-size: 1.3rem;
 }

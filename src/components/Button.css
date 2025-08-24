@@ -36,10 +36,10 @@
 .button-28:hover {
   color: white;
   background-color: #366db3;
-  transform: scale(.8);
+  transform: translateY(-2px) scale(.9);
 }
 
 .button-28:active {
   box-shadow: none;
-  transform: translateY(0) scale(1.1);
+  transform: translateY(0) scale(.9);
 }
