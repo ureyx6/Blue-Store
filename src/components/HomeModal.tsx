@@ -1,6 +1,6 @@
 import React from 'react'
 import "./HomeModal.css"
-import Button from './Button'
+import ButtonBlack from './ButtonBlack'
 import { Link } from 'react-router-dom';
 
 function HomeModal ( {modalImage, modalHeader,modalText} : {modalImage:string, modalHeader:string, modalText:string}  ) {
@@ -18,7 +18,7 @@ function HomeModal ( {modalImage, modalHeader,modalText} : {modalImage:string, m
             </div>
             <div className = "modal-button">
             <Link to="/shop">
-        <Button buttonText="Shop Now"/>
+        <ButtonBlack buttonText="Shop Now"/>
         </Link>
         </div>
         </div>
