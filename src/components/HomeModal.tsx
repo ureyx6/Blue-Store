@@ -1,5 +1,7 @@
 import React from 'react'
 import "./HomeModal.css"
+import Button from './Button'
+import { Link } from 'react-router-dom';
 
 function HomeModal ( {modalImage, modalHeader,modalText} : {modalImage:string, modalHeader:string, modalText:string}  ) {
     return ( 
@@ -14,6 +16,11 @@ function HomeModal ( {modalImage, modalHeader,modalText} : {modalImage:string, m
             <div className ="modal-text">
                 {modalText}
             </div>
+            <div className = "modal-button">
+            <Link to="/shop">
+        <Button buttonText="Shop Now"/>
+        </Link>
+        </div>
         </div>
     </div>
     )

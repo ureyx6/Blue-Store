@@ -1,0 +1,38 @@
+.modal-container {
+    display:flex;
+    border-radius: 3rem;
+    width:33rem;
+    height:36rem;
+    flex-direction:column;
+    overflow:hidden;
+    align-items: center;
+    justify-content:center;
+    transition: all .5s ease;
+}
+.modal-container:hover {
+    transform:scale(1.05);
+}
+
+.modal-top {
+    display:flex;
+    overflow:hidden;
+    height:60%
+}
+.modal-bottom {
+    text-align:center;
+    height:40%;
+    width:100%;
+}
+.modal-header {
+    margin-top: 2rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.modal-text {
+    margin-bottom: 2rem;
+}
+.modal-top img {
+    width:100%;
+}
+
+

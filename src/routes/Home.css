@@ -75,3 +75,10 @@
     font-weight: 300;
     font-size: 3.5rem;
 }
+
+.home-modals {
+    display:flex;
+    margin:2rem;
+    margin-top:6rem;
+    justify-content: space-around;
+}

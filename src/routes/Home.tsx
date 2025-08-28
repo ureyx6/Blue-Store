@@ -5,6 +5,9 @@ import { Link } from 'react-router-dom';
 import { TiStarFullOutline } from "react-icons/ti";
 import HomeModal from '../components/HomeModal';
 import holderImage from '../assets/default_sm.jpg';
+import proGalaxy from '../assets/pro galaxybook.jpg';
+import proPad from '../assets/pro ipad.jpg';
+import proThink from '../assets/pro thinkbook.jpg';
 
 function Home() {
   return (
@@ -29,7 +32,9 @@ function Home() {
         </div>
       </div>
       <div className = "home-modals">
-        <HomeModal modalImage={holderImage} modalHeader = "Example" modalText = "meow meow meow"/>
+        <HomeModal modalImage={proPad} modalHeader = "iPad by Apple" modalText = "Timeless, Sleek, Classic."/>
+        <HomeModal modalImage={proGalaxy} modalHeader = "Galaxy Book by Samsung" modalText = "The Galaxy In Your Lap."/>
+        <HomeModal modalImage={proThink} modalHeader = "ThinkBook by Lenovo" modalText = "Think Better, Think Smarter."/>
       </div>
     </div>
   )
