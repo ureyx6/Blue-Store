@@ -16,7 +16,7 @@
     width: 100%;
     height: 50vh;
     margin-top: .5rem;
-    margin-left: 5rem;
+    margin-left: 2rem;
 }
 .home-right-side {
     max-width:50%;
@@ -34,6 +34,7 @@
 .textbox span {
     color: #366db3;
 }
+
 .buttonbox {
     width: 20%;
 
@@ -49,6 +50,28 @@
 .under-main-text {
     color: black;
     margin-top: -.9rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     font-size: 1.3rem;
+}
+.home-sr {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction:column;
+    background-color:#9bb6d9;
+    width:100%;
+    min-height:13rem;
+}
+
+.star-rating {
+    margin-top:3rem;
+    color:#366db3;
+    font-size:2.5rem;
+}
+.text-under-stars {
+    color:black;
+    margin-bottom: 3rem;
+    margin-top: .5rem;
+    font-weight: 300;
+    font-size: 3.5rem;
 }
