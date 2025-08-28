@@ -32,9 +32,9 @@ function Home() {
         </div>
       </div>
       <div className = "home-modals">
-        <HomeModal modalImage={proPad} modalHeader = "iPad by Apple" modalText = "Timeless, Sleek, Classic."/>
-        <HomeModal modalImage={proGalaxy} modalHeader = "Galaxy Book by Samsung" modalText = "The Galaxy In Your Lap."/>
-        <HomeModal modalImage={proThink} modalHeader = "ThinkBook by Lenovo" modalText = "Think Better, Think Smarter."/>
+        <HomeModal modalImage={proPad} modalHeader = "iPad by Apple" modalText = "Timeless, Sleek, Classic"/>
+        <HomeModal modalImage={proGalaxy} modalHeader = "Galaxy Book by Samsung" modalText = "The Galaxy In Your Lap"/>
+        <HomeModal modalImage={proThink} modalHeader = "ThinkBook by Lenovo" modalText = "Think Better, Think Smarter"/>
       </div>
     </div>
   )
