@@ -8,6 +8,9 @@ import holderImage from '../assets/default_sm.jpg';
 import proGalaxy from '../assets/pro galaxybook.jpg';
 import proPad from '../assets/pro ipad.jpg';
 import proThink from '../assets/pro thinkbook.jpg';
+import { ImAirplane } from "react-icons/im";
+import { FaBoltLightning } from "react-icons/fa6";
+import { MdImportantDevices } from "react-icons/md";
 
 function Home() {
   return (
@@ -15,7 +18,7 @@ function Home() {
       <div className = "home-top">
         <div className ="home-right-side">
         <div className = "textbox">Ready For <span>Endless Deals?</span></div>
-      <div className="under-main-text">Shop with confidence, we have the best prices!</div>
+      <div className="under-main-text">All the best tech at all the best prices.</div>
       <div className ="buttonbox">
         <Link to="/shop">
         <Button buttonText="Shop Now"/>
@@ -29,6 +32,25 @@ function Home() {
         </div>
         <div className = "text-under-stars">
           Over 9000 Five Star Reviews
+        </div>
+      </div>
+      <div className = "home-promises"> 
+        <div className = "promises-header">
+          Our Promises To You
+        </div>
+        <div className = "promises-icons">
+          <div className ="promises-icons-1st">
+          <ImAirplane/>
+          Free Shipping
+          </div>
+          <div className = "promises-icons-2nd">
+            <FaBoltLightning/>
+            1-2 Day Delivery
+          </div>
+          <div className = "promises-icons-3rd">
+            <MdImportantDevices/>
+            10 Year Warranty 
+          </div>
         </div>
       </div>
       <div className = "home-modals">

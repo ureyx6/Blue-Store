@@ -81,3 +81,40 @@
     margin-top:5rem;
     justify-content: space-around;
 }
+
+.home-promises {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    width:100%;
+}
+.promises-header {
+    font-weight:300;
+    font-size:3.5rem;
+}
+.promises-icons {
+    font-size:2.5rem;
+    display:flex;
+    justify-content:space-around;
+    color:#366db3;
+}
+.promises-icons-1st {
+    align-items:center;
+    display:flex;
+    flex-direction:column;
+    margin:2rem;
+}
+.promises-icons-2nd {
+    align-items:center;
+    display:flex;
+    flex-direction:column;
+    margin:2rem;
+}
+.promises-icons-3rd {
+    align-items:center;
+    display:flex;
+    flex-direction:column;
+    margin:2rem;
+}
