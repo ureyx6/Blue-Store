@@ -26,14 +26,6 @@ function Home() {
         </div>
       </div>
       </div>
-      <div className = "home-sr">
-        <div className = "star-rating">
-          <TiStarFullOutline/><TiStarFullOutline/><TiStarFullOutline/><TiStarFullOutline/><TiStarFullOutline/>
-        </div>
-        <div className = "text-under-stars">
-          Over 9000 Five Star Reviews
-        </div>
-      </div>
       <div className = "home-promises"> 
         <div className = "promises-header">
           Our Promises To You
@@ -53,10 +45,18 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className = "home-modals">
+       <div className = "home-modals">
         <HomeModal modalImage={proPad} modalHeader = "iPad by Apple" modalText = "Timeless, Sleek, Classic"/>
         <HomeModal modalImage={proGalaxy} modalHeader = "Galaxy Book by Samsung" modalText = "The Galaxy In Your Lap"/>
         <HomeModal modalImage={proThink} modalHeader = "ThinkBook by Lenovo" modalText = "Think Better, Think Smarter"/>
+      </div>
+       <div className = "home-sr">
+        <div className = "star-rating">
+          <TiStarFullOutline/><TiStarFullOutline/><TiStarFullOutline/><TiStarFullOutline/><TiStarFullOutline/>
+        </div>
+        <div className = "text-under-stars">
+          Over 9000 Five Star Reviews
+        </div>
       </div>
     </div>
   )
